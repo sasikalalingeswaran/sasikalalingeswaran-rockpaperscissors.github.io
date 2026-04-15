@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background: linear-gradient(90deg,rgb(1, 1, 39),black);
+    color: white;
+    font-family: poppins;
+}
+h2{
+    font-family: inter;
+    display: flex;
+    font-family: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.scoreboards{
+    margin-left: 450px;
+    margin-top: 100px;
+    display: flex;
+    gap: 70px;
+}
+#playerScore{
+  border: 1px solid white;
+    height: 40px;
+    width: 20%;
+    padding: 18px;
+    background-color: rgb(3, 80, 3);
+    border-radius: 15px;
+    font-weight: 300;
+}
+#playscores{
+    margin-top: 0px;
+}
+#computerscore{
+    border: 1px solid white;
+    height: 40px;
+    width: 20%;
+    padding: 18px;
+    background-color: blue;
+    border-radius: 15px;
+    font-weight: 300;
+}
+#compscores{
+    margin-top: 0px;
+}
+#movesleft{
+    margin-left: 600px;
+    margin-top: 40px;
+    border: 1px solid white;
+    width: 10%;
+    border-radius: 15px;
+    height: 30px;
+    font-size: 12px;
+    padding-left: 24px;
+    padding-top: 5px;
+}
+
+#option{
+    margin-left: 470px;
+    margin-top: 40px;
+}
+#rock{
+    padding: 40px;
+    font-size: 40px;
+    background:linear-gradient(45deg,rgb(1, 1, 56));
+    color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px grey;
+    outline: none;
+    border: none;
+    transition: all 0.5s ease;
+}
+#paper{
+    margin-left: 20px;
+    padding: 40px;
+    font-size: 40px;
+    background-color: inherit;
+    color: white;
+    background:linear-gradient(45deg,rgb(1, 1, 56));
+    box-shadow: 1px 1px 1px grey;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    transition: all 0.5s ease;
+}
+#scissors{
+    margin-left: 20px;
+    padding: 40px;
+    font-size: 40px;
+    background:linear-gradient(45deg,rgb(1, 1, 56));
+    color: white;
+    border: 1px solid white;
+    box-shadow: 1px 1px 1px grey;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    transition: all 0.5s ease;
+}
+#rock:hover,
+#paper:hover,
+#scissors:hover{
+    background: inherit;
+    transform: scale(0.9);
+    box-shadow: -2px -2px 1px grey;
+}
+#result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+#popup{
+    position: absolute;
+    top: 300px;
+    width: 18%;
+    border: 1px solid white;
+    margin-left: 570px;
+    height: 90px;
+    border-radius: 15px;
+    display: none;
+}
+#gameover{
+    margin-left: 75px;
+    margin-top: 5px;
+}
+#finalresult{
+    margin-left: 83px;
+}
+#reload{
+    border: inherit;
+    margin-left: 60px;
+    width: 50%;
+    height: 27px;
+    background-color: rgb(4, 105, 4);
+    color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px){
+    .scoreboards{
+        margin-left: 50px;
+        margin-top: 100px;
+        display: flex;
+        gap: 70px;
+    }
+    #playerScore{
+        border: 1px solid white;
+        height: 40px;
+        width: 25%;
+        padding: 18px;
+        background-color: rgb(3, 80, 3);
+        border-radius: 15px;
+        font-weight: 300;
+        font-size: 13px;
+    }
+#computerscore{
+    border: 1px solid white;
+    height: 40px;
+    width: 30%;
+    padding: 18px;
+    background-color: blue;
+    border-radius: 15px;
+    font-weight: 300;
+    font-size: 13px;
+}
+#movesleft{
+    margin-left: 150px;
+    margin-top: 40px;
+    border: 1px solid white;
+    width: 25%;
+    border-radius: 15px;
+    height: 30px;
+    font-size: 12px;
+    padding-left: 24px;
+    padding-top: 5px;
+}
+#option{
+    margin-left: 50px;
+    margin-top: 40px;
+}
+#rock{
+    padding: 40px;
+    font-size: 30px;
+    background:linear-gradient(45deg,rgb(1, 1, 56));
+    color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px grey;
+    outline: none;
+    border: none;
+    transition: all 0.5s ease;
+}
+#paper,#scissors{
+        font-size: 30px;
+}
+
+#popup{
+    margin-left: 130px;
+    width: 50%;
+}
+}
