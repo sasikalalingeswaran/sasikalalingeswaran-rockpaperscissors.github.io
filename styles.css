@@ -137,12 +137,14 @@ h2{
     border-radius: 10px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 612px){
     .scoreboards{
-        margin-left: 50px;
+        margin-left: 6px;
         margin-top: 100px;
         display: flex;
-        gap: 70px;
+        justify-content: center;
+        width: 100%;
+        gap: 20px;
     }
     #playerScore{
         border: 1px solid white;
@@ -162,13 +164,13 @@ h2{
     background-color: blue;
     border-radius: 15px;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 12px;
 }
 #movesleft{
-    margin-left: 150px;
+    margin-left: 120px;
     margin-top: 40px;
     border: 1px solid white;
-    width: 25%;
+    width: 35%;
     border-radius: 15px;
     height: 30px;
     font-size: 12px;
@@ -176,11 +178,12 @@ h2{
     padding-top: 5px;
 }
 #option{
-    margin-left: 50px;
+    margin-left: 20px;
     margin-top: 40px;
 }
 #rock{
-    padding: 40px;
+    padding: 30px;
+    height: 100px;
     font-size: 30px;
     background:linear-gradient(45deg,rgb(1, 1, 56));
     color: white;
@@ -192,8 +195,9 @@ h2{
 }
 #paper,#scissors{
         font-size: 30px;
+        padding: 30px;
+        height: 100px;
 }
-
 #popup{
     margin-left: 130px;
     width: 50%;
@@ -205,4 +209,19 @@ h2{
     transform: scale(0.9);
     box-shadow: -2px -2px 1px grey;
 }
+#popup{
+    margin-left: 100px;  
+    margin-top: 50px;
 }
+#gameover{
+    margin-left: 40px;
+}
+#finalresult{
+    margin-left: 50px;
+}
+#reload{
+    margin-left: 40px;
+    margin-top: 6px;
+}
+}
+
