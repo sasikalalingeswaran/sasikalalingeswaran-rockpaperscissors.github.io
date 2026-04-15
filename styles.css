@@ -198,4 +198,11 @@ h2{
     margin-left: 130px;
     width: 50%;
 }
+#rock:hover,
+#paper:hover,
+#scissors:hover{
+    background: linear-gradient(90deg,rgb(1, 1, 39),black);
+    transform: scale(0.9);
+    box-shadow: -2px -2px 1px grey;
+}
 }
