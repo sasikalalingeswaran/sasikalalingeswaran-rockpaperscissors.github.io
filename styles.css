@@ -185,13 +185,6 @@ h2{
     padding: 30px;
     height: 100px;
     font-size: 30px;
-    background:linear-gradient(45deg,rgb(1, 1, 56));
-    color: white;
-    border-radius: 15px;
-    box-shadow: 1px 1px 1px grey;
-    outline: none;
-    border: none;
-    transition: all 0.5s ease;
 }
 #paper,#scissors{
         font-size: 30px;
